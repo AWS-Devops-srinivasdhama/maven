@@ -44,13 +44,6 @@ Before installing Maven, Java must be installed.
 
 Maven is generally distributed as a compressed archive (`.tar.gz` or `.zip`), not as a Windows-style `.exe` installer.
 
-Common installation directory:
-
-```bash
-cd /opt
-```
-## Maven Installation on AWS EC2 (RHEL)
-
 ### Step 1: Launch EC2 Instance
 - Launch an EC2 instance.
 - Connect to the EC2 instance using SSH or Git Bash.
@@ -77,7 +70,11 @@ java -version
 ```
 - `javac -version` verifies the Java compiler version.
 - `java -version` verifies the Java runtime version.
+Common installation directory:
 
+```bash
+cd /opt
+```
 ### Step 5: Download Maven Software
 
 - Always download Maven from the official Apache Maven website.
