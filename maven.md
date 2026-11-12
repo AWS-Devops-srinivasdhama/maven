@@ -49,13 +49,43 @@ Common installation directory:
 ```bash
 cd /opt
 ```
-1.Launch an EC2 machine & connect to that machine
-2.sudo su -  [switch to root user]
-3.sudo yum install java-21-openjdk-devel -y
-4.javac -version
-#Login as a root user
-5.Download the Maven Software (always go with officialdoc)
+## Maven Installation on AWS EC2 (RHEL)
+
+### Step 1: Launch EC2 Instance
+- Launch an EC2 instance.
+- Connect to the EC2 instance using SSH or Git Bash.
+
+### Step 2: Switch to Root User
+
+```bash
+sudo su -
+```
+- Switches the current user to the root user.
+
+### Step 3: Install Java 21 JDK
+
+```bash
+sudo yum install java-21-openjdk-devel -y
+```
+- Installs Java 21 Development Kit (JDK).
+
+### Step 4: Verify Java Installation
+
+```bash
+javac -version
+java -version
+```
+- `javac -version` verifies the Java compiler version.
+- `java -version` verifies the Java runtime version.
+
+### Step 5: Download Maven Software
+
+- Always download Maven from the official Apache Maven website.
+
+```bash
 wget https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.zip
+```
+- Downloads the Apache Maven 3.9.10 binary ZIP file.
 
 
 Example directory structure:
