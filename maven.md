@@ -83,7 +83,9 @@ java -version
 - Always download Maven from the official Apache Maven website.
 
 ```bash
+yum install wget unzip tree -y
 wget https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.zip
+unzip apache-maven-3.9.10-bin.zip
 ```
 - Downloads the Apache Maven 3.9.10 binary ZIP file.
 
