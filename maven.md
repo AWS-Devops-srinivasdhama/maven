@@ -49,6 +49,14 @@ Common installation directory:
 ```bash
 cd /opt
 ```
+1.Launch an EC2 machine & connect to that machine
+2.sudo su -  [switch to root user]
+3.sudo yum install java-21-openjdk-devel -y
+4.javac -version
+#Login as a root user
+5.Download the Maven Software (always go with officialdoc)
+wget https://dlcdn.apache.org/maven/maven-3/3.9.10/binaries/apache-maven-3.9.10-bin.zip
+
 
 Example directory structure:
 
@@ -73,7 +81,7 @@ Example directory structure:
 Example:
 
 ```bash
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export M2_HOME=/opt/apache-maven
 export PATH=$PATH:$M2_HOME/bin
 ```
